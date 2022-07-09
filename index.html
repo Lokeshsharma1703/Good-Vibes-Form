@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            background-color: skyblue;
+        }
+        
+        h1 {
+            font-size: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #head {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        
+        #body {
+            height: 600px;
+            width: 800px;
+            background-color: rgb(232, 232, 232);
+            margin: auto;
+            border-radius: 10px;
+        }
+        
+        #head2 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding-top: 25px;
+            font-size: 18px;
+        }
+        
+        #content {
+            display: flex;
+            padding-top: 20px;
+        }
+        
+        #left {
+            width: 400px;
+            text-align: right;
+            padding-right: 10px;
+            font-size: 14px;
+        }
+        
+        #right {
+            width: 400px;
+            padding-left: 10px;
+        }
+        
+        input[type="text"] {
+            width: 230px;
+            border-radius: 5px;
+        }
+        
+        select {
+            width: 150px;
+            border-radius: 5px;
+        }
+        
+        #child {
+            margin-top: 5px;
+        }
+        
+        #textarea {
+            width: 230px;
+            border-radius: 5px;
+        }
+        
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        button {
+            margin-top: 20px;
+            border-radius: 5px;
+            width: 80px;
+            height: 30px;
+            background-color: rgb(85, 184, 224);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head">
+        <h1>Good Vibes Form</h1>
+    </div>
+    <div id="body">
+        <form action="./Account.html" method="get">
+            <div id="head2">Tell us something positive that happened to you today.</div>
+
+            <div id="content">
+                <div id="left">
+                    <label for="" class="left">Name</label>
+                </div>
+                <div id="right">
+                    <input type="text" placeholder="Enter your name" name="name">
+                </div>
+            </div>
+            <div id="content">
+                <div id="left">
+                    <label for="" class="left">Email</label>
+                </div>
+                <div id="right">
+                    <input type="text" placeholder="Enter your email address" name="email">
+                </div>
+            </div>
+            <div id="content">
+                <div id="left">
+                    <label for="" class="left">On a scale of 1-10, how good  was it?</label>
+                </div>
+                <div id="right">
+                    <input type="text" placeholder="Enter a number between 1 and 10" name="scale">
+                </div>
+            </div>
+            <div id="content">
+                <div id="left">
+                    <label for="" class="left">Where did it happen?</label>
+                </div>
+                <div id="right">
+                    <select name="" id="">
+                        <option disabled selected>Select From Below</option>
+                        <option value="At Home">At home</option>
+                        <option value="At Office">At Office</option>
+                        <option value="On Road">On Road</option>
+                        <option value="Somewhere else">Somewhere Else</option>
+                    </select>
+                </div>
+            </div>
+            <div id="content">
+                <div id="left">
+                    <label for="" class="left">At what time of day did it happen?</label>
+                </div>
+                <div id="right">
+                    <div id="child">
+                        <input type="radio" name="time" value="morning">Morning
+                    </div>
+                    <div id="child">
+                        <input type="radio" name="time" value="afternoon">Afternoon
+                    </div>
+                    <div id="child">
+                        <input type="radio" name="time" value="evening">Evening
+                    </div>
+                </div>
+            </div>
+            <div id="content">
+                <div id="left">
+                    <pre>
+                        <label for="" class="left">What emotions did you experience?</label>
+                        <label for="" class="left">(Select all that apply)</label>
+                    </pre>
+                </div>
+                <div id="right">
+                    <div id="child">
+                        <input type="checkbox" name="emotions" value="Excited">Excited
+                    </div>
+                    <div id="child">
+                        <input type="checkbox" name="emotions" value="Humbled">Humbled
+                    </div>
+                    <div id="child">
+                        <input type="checkbox" name="emotions" value="Elated">Elated
+                    </div>
+                    <div id="child">
+                        <input type="checkbox" name="emotions" value="Loved">Loved
+                    </div>
+                    <div id="child">
+                        <input type="checkbox" name="emotions" value="Enthusiastic">Enthusiastic
+                    </div>
+                </div>
+            </div>
+            <div id="content">
+                <div id="left">
+                    <label for="" class="left">Please describe your positive experience.</label>
+                </div>
+                <div id="right">
+                    <textarea name="experience" id="textarea" placeholder="Enter your experience here..." cols="30" rows="3"></textarea>
+                </div>
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
